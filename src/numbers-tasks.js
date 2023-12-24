@@ -637,8 +637,8 @@ function getCountOfOddNumbers(number) {
   let count = 0;
   const num = Math.abs(number);
 
-  for (let i = 0; i < num; i += 1) {
-    if (i % 2 === 0) count += 1;
+  for (let i = 0; i <= num; i += 1) {
+    if (i % 2 !== 0) count += 1;
   }
 
   return count;
